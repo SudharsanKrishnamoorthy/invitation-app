@@ -1,0 +1,46 @@
+name: invitation
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  flutter_staggered_grid_view: ^0.3.0
+  cached_network_image: ^2.0.0
+  url_launcher: ^5.4.2
+  video_player: ^0.10.8+1
+  chewie: ^0.9.8+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/bg/
+    - assets/images/couple/bg/
+    - assets/images/couple/details/
+    - assets/images/couple/profile/
+    - assets/images/icons/
+    - assets/images/splash/
+    - assets/images/users/
+
+  fonts:
+  - family: GreatVibes     
+    fonts:
+    - asset: assets/fonts/GreatVibes-Regular.ttf
+
+  - family: OpenSans
+    fonts:
+    - asset: assets/fonts/OpenSans-Regular.ttf
+
