@@ -69,7 +69,7 @@ class _SplashScreenState extends State<SplashScreen>
               style: splashFooter,
             ),
             Text(
-              'P3S2M1',
+              'P\u00B3 S\u00B2 M\u00B9',
               style: splashFooter1,
             )
           ],

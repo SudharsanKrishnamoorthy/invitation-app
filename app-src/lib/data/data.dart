@@ -86,14 +86,14 @@ var wishes = [
     name: 'Praseeda',
     image: '$assetusers/praseeda.jpeg',
     relation: 'Friend',
-    text: 'You have played a good role as a brother and I hope you could be a responsible and great person for Nandhini ,wishing you a lifetime of love and happiness to start up a wonderful journey together sailing the same feel of love till end,let your love grow day by day and last forever',
+    text: 'You have played a good role as a brother and I hope you could be a responsible and great person for Nandhini, wishing you a lifetime of love and happiness to start up a wonderful journey together sailing the same feel of love till end, let your love grow day by day and last forever.',
     isSelected: false,
   ),
   WishesModel(
     name: 'Swetha',
     image: '$assetusers/swetha.jpg',
     relation: 'Friend',
-    text: 'My first friend in DSRC. When I was longing for a friend here someone to talk with someone to share my problems with I found u 😊 an awesome guy.. helpful idiot. The one who irritates me to the core and who will be there for me no matter what and whatever the situation be..I know and we all know how much you have been waiting and longing for this day and we were the first happiest person in your friends circle on this great news . Always stay happie and blessed da Soos..May god bless u abundantly with all that you wish and desire for. ❤love you loads.. always stay as a good friend by our side . En paartha 😃😃',
+    text: 'My first friend in DSRC.\nWhen I was longing for a friend here someone to talk with someone to share my problems with I found u 😊 an awesome guy.. helpful idiot.\nThe one who irritates me to the core and who will be there for me no matter what and whatever the situation be..\nI know and we all know how much you have been waiting and longing for this day and we were the first happiest person in your friends circle on this great news.\nAlways stay happie and blessed da Soos..\nMay god bless u abundantly with all that you wish and desire for. ❤love you loads..\nalways stay as a good friend by our side.\n\nEn paartha 😃😃',
     isSelected: false,
   ),
   WishesModel(

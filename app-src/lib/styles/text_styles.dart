@@ -26,8 +26,9 @@ const TextStyle splashFooter = TextStyle(
 
 const TextStyle splashFooter1 = TextStyle(
   fontFamily: AppTheme.fontName,
-  letterSpacing: 3,
+  letterSpacing: 1,
   color: AppTheme.nearlyWhite,
+  fontSize: 17
 );
 
 const TextStyle headline = TextStyle(
