@@ -52,10 +52,7 @@ class _ExplorePageState extends State<ExplorePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 MenuButton(
-                  child: Icon(
-                    Icons.supervisor_account,
-                    size: 25,
-                  ),
+                  child: Image.asset('$asseticons/icon.png'),
                   onPressed: () {
                     Navigator.pushNamed(context, Router.details);
                   },
@@ -63,7 +60,7 @@ class _ExplorePageState extends State<ExplorePage> {
                 MenuButton(
                   child: Icon(
                     Icons.favorite,
-                    size: 25,
+                    size: 40,
                   ),
                   onPressed: () {
                     Navigator.pushNamed(context, Router.favourite);
@@ -72,7 +69,7 @@ class _ExplorePageState extends State<ExplorePage> {
                 MenuButton(
                   child: Icon(
                     Icons.supervisor_account,
-                    size: 25,
+                    size: 40,
                   ),
                   onPressed: () {
                     Navigator.pushNamed(context, Router.wishes);
@@ -86,7 +83,7 @@ class _ExplorePageState extends State<ExplorePage> {
                 MenuButton(
                   child: Icon(
                     Icons.event,
-                    size: 25,
+                    size: 40,
                   ),
                   onPressed: () {
                     Navigator.pushNamed(context, Router.events);
@@ -95,7 +92,7 @@ class _ExplorePageState extends State<ExplorePage> {
                 MenuButton(
                   child: Icon(
                     Icons.photo,
-                    size: 25,
+                    size: 40,
                   ),
                   onPressed: () {
                     Navigator.pushNamed(context, Router.album);
@@ -104,7 +101,7 @@ class _ExplorePageState extends State<ExplorePage> {
                 MenuButton(
                   child: Icon(
                     Icons.ondemand_video,
-                    size: 25,
+                    size: 40,
                   ),
                   onPressed: () {
                     Navigator.pushNamed(context, Router.video);

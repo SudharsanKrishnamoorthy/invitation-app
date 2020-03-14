@@ -8,8 +8,8 @@ class MenuButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Container(
-        height: 40,
-        width: 60,
+        height: 50,
+        width: 65,
         child: InkWell(
           onTap: onPressed,
           child: child,
