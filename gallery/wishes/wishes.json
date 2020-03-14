@@ -51,7 +51,7 @@
         "id": 7,
         "name": "Aravind",
 		"relation": "Friend",
-        "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/mari.jpeg",
+        "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/aravind.jpg",
 		"text": "Happy married life",
 		"isSelected": false
     },
@@ -59,7 +59,7 @@
         "id": 8,
         "name": "Feroz",
 		"relation": "Friend",
-        "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/mari.jpeg",
+        "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/feroz.jpg",
 		"text": "Happy married life",
 		"isSelected": false
     },
