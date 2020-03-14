@@ -65,7 +65,6 @@ class _EventsPageState extends State<EventsPage> with TickerProviderStateMixin {
           children: <Widget>[
             HeaderView(
               title: 'Events',
-              isLight: true,
             ),
             Expanded(
               child: _buildList(events),

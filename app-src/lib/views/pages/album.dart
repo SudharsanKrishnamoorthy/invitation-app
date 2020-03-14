@@ -54,7 +54,14 @@ class _AlbumPageState extends State<AlbumPage> {
           ),
         ),
         Positioned.fill(
-          child: _buildBody(),
+          child: Column(
+            children: <Widget>[
+              HeaderView(
+                title: 'Gallery',
+              ),
+              Expanded(child:  _buildBody(),),
+            ],
+          ),
         ),
       ],
     );
