@@ -1,0 +1,100 @@
+[
+    {
+        "id": 1,
+        "name": "Prasanth",
+		"relation": "Friend",
+        "imageUrl": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/images/gallery/1.jpg",
+		"text": ""
+    },
+	{
+        "id": 2,
+        "name": "Sathish",
+		"relation": "Friend",
+        "imageUrl": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/images/gallery/1.jpg",
+		"text": ""
+    },
+	{
+        "id": 2,
+        "name": "Ramesh",
+		"relation": "Friend",
+        "imageUrl": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/images/gallery/1.jpg",
+		"text": ""
+    },
+	{
+        "id": 3,
+        "name": "Ramkumar",
+		"relation": "Friend",
+        "imageUrl": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/images/gallery/1.jpg",
+		"text": ""
+    },
+	{
+        "id": 2,
+        "name": "Mubarak",
+		"relation": "Friend",
+        "imageUrl": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/images/gallery/1.jpg",
+		"text": ""
+    },
+	{
+        "id": 2,
+        "name": "Mari",
+		"relation": "Friend",
+        "imageUrl": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/images/gallery/1.jpg",
+		"text": ""
+    },
+	{
+        "id": 4,
+        "name": "Praseeda",
+		"relation": "Friend",
+        "imageUrl": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/images/gallery/1.jpg",
+		"text": ""
+    },
+	{
+        "id": 5,
+        "name": "Swetha",
+		"relation": "Friend",
+        "imageUrl": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/images/gallery/1.jpg",
+		"text": ""
+    },
+	{
+        "id": 6,
+        "name": "Poovika",
+		"relation": "Friend",
+        "imageUrl": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/images/gallery/1.jpg",
+		"text": ""
+    },
+	{
+        "id": 7,
+        "name": "Manoj",
+		"relation": "Friend",
+        "imageUrl": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/images/gallery/1.jpg",
+		"text": ""
+    },
+	{
+        "id": 8,
+        "name": "Packiaseelan",
+		"relation": "Friend",
+        "imageUrl": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/images/gallery/1.jpg",
+		"text": ""
+    },
+	{
+        "id": 9,
+        "name": "Vijay",
+		"relation": "Friend",
+        "imageUrl": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/images/gallery/1.jpg",
+		"text": ""
+    },
+	{
+        "id": 10,
+        "name": "Balaji",
+		"relation": "Friend",
+        "imageUrl": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/images/gallery/1.jpg",
+		"text": ""
+    },
+	{
+        "id": 11,
+        "name": "Srinivasan",
+		"relation": "Friend",
+        "imageUrl": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/images/gallery/1.jpg",
+		"text": ""
+    }
+]
