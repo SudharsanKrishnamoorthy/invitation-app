@@ -11,12 +11,12 @@
         "id": 2,
         "name": "Sathish",
 		"relation": "Friend",
-        "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/packiaseelan.jpg",
+        "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/sathish.jpg",
 		"text": "Happy married life",
 		"isSelected": false
     },
 	{
-        "id": 2,
+        "id": 3,
         "name": "Ramesh",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/packiaseelan.jpg",
@@ -24,7 +24,7 @@
 		"isSelected": false
     },
 	{
-        "id": 3,
+        "id": 4,
         "name": "Ramkumar",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/packiaseelan.jpg",
@@ -32,15 +32,15 @@
 		"isSelected": false
     },
 	{
-        "id": 2,
+        "id": 5,
         "name": "Mubarak",
 		"relation": "Friend",
-        "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users//mubarak.jpeg",
+        "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users//mubarak.png",
 		"text": "As you blend your lives together with each other, I want to wish you a married life full of romance, cuddle and life time of happiness!\n\nHappy Wedding 🎉",
 		"isSelected": false
     },
 	{
-        "id": 2,
+        "id": 6,
         "name": "Mari",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/mari.jpeg",
@@ -48,7 +48,23 @@
 		"isSelected": false
     },
 	{
-        "id": 4,
+        "id": 7,
+        "name": "Aravind",
+		"relation": "Friend",
+        "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/mari.jpeg",
+		"text": "Happy married life",
+		"isSelected": false
+    },
+	{
+        "id": 8,
+        "name": "Feroz",
+		"relation": "Friend",
+        "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/mari.jpeg",
+		"text": "Happy married life",
+		"isSelected": false
+    },
+	{
+        "id": 9,
         "name": "Praseeda",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/praseeda.jpeg",
@@ -56,7 +72,7 @@
 		"isSelected": false
     },
 	{
-        "id": 5,
+        "id": 10,
         "name": "Swetha",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/swetha.jpg",
@@ -64,7 +80,7 @@
 		"isSelected": false
     },
 	{
-        "id": 6,
+        "id": 11,
         "name": "Poovika",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/poovika.jpeg",
@@ -72,7 +88,7 @@
 		"isSelected": false
     },
 	{
-        "id": 7,
+        "id": 12,
         "name": "Manoj",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/manoj.jpg",
@@ -80,7 +96,7 @@
 		"isSelected": false
     },
 	{
-        "id": 8,
+        "id": 13,
         "name": "Packiaseelan",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/packiaseelan.jpg",
@@ -88,7 +104,7 @@
 		"isSelected": false
     },
 	{
-        "id": 9,
+        "id": 14,
         "name": "Vijay",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/vijay.jpeg",
@@ -96,7 +112,7 @@
 		"isSelected": false
     },
 	{
-        "id": 10,
+        "id": 15,
         "name": "Balaji",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/balaji.jpeg",
@@ -104,7 +120,7 @@
 		"isSelected": false
     },
 	{
-        "id": 11,
+        "id": 16,
         "name": "Srinivasan",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/srinivasan.jpeg",
