@@ -48,6 +48,14 @@
 		"isSelected": false
     },
 	{
+        "id": 6,
+        "name": "Mano",
+		"relation": "Friend",
+        "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/mano.jpg",
+		"text": "Happy married life",
+		"isSelected": false
+    },
+	{
         "id": 7,
         "name": "Aravind",
 		"relation": "Friend",
@@ -84,7 +92,7 @@
         "name": "Poovika",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/poovika.jpeg",
-		"text": "Looking forward for your life's most beautiful days... My heartiest wishes to you both.. \n\nHappy married Life ",
+		"text": "Looking forward for your life's most beautiful days... My heartiest wishes to you both.. \n\nHappy married Life ❤️",
 		"isSelected": false
     },
 	{
