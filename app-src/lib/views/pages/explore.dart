@@ -71,7 +71,7 @@ class _ExplorePageState extends State<ExplorePage> {
                 ),
                 MenuButton(
                   child: Icon(
-                    Icons.event_note,
+                    Icons.supervisor_account,
                     size: 25,
                   ),
                   onPressed: () {

@@ -1,4 +1,4 @@
-package com.example.invitation
+package com.sn.invitation
 
 import androidx.annotation.NonNull;
 import android.view.WindowManager;

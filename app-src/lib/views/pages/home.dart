@@ -30,6 +30,7 @@ class _HomePageState extends State<HomePage> {
           ),
           _buildTimer(),
           _buidExploreButton(),
+          _buidDate(),
         ],
       ),
     );
@@ -60,9 +61,21 @@ class _HomePageState extends State<HomePage> {
           child: Container(
             child: Column(
               children: <Widget>[
-                Text('Sudharsan', style: splashTitle,),
-                Text('WEDS', style: splashTitle.copyWith(fontSize: 12, fontFamily: AppTheme.fontName, letterSpacing: 3),),
-                Text('Nandhini', style: splashTitle,),
+                Text(
+                  'Sudharsan',
+                  style: splashTitle,
+                ),
+                Text(
+                  'WEDS',
+                  style: splashTitle.copyWith(
+                      fontSize: 12,
+                      fontFamily: AppTheme.fontName,
+                      letterSpacing: 3),
+                ),
+                Text(
+                  'Nandhini',
+                  style: splashTitle,
+                ),
               ],
             ),
           ),
@@ -76,7 +89,7 @@ class _HomePageState extends State<HomePage> {
     var dt = dat.difference(DateTime.now()).inSeconds;
     return Positioned(
       top: UIHelper.screenHeight * .72,
-      height:  UIHelper.screenHeight * .15,
+      height: UIHelper.screenHeight * .15,
       child: Container(
         height: UIHelper.screenHeight * .15,
         width: UIHelper.screenWidth,
@@ -102,11 +115,39 @@ class _HomePageState extends State<HomePage> {
         child: RaisedButton(
           color: AppTheme.homeC2.withOpacity(.8),
           child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[Text('Explore'), Icon(Icons.chevron_right)]),
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text('Explore'),
+              Icon(Icons.chevron_right),
+            ],
+          ),
           onPressed: () {
             Navigator.pushNamed(context, Router.explore);
           },
+        ),
+      ),
+    );
+  }
+
+  Widget _buidDate() {
+    return Positioned(
+      bottom: UIHelper.screenHeight * .017,
+      left: UIHelper.screenHeight * .017,
+      child: Container(
+        height: 40,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              '24.05.2020',
+              style: TextStyle(
+                color: AppTheme.homeC1,
+                fontSize: 35,
+                fontFamily: 'GreatVibes',
+                fontWeight: FontWeight.bold
+              ),
+            ),
+          ],
         ),
       ),
     );

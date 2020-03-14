@@ -42,7 +42,7 @@ class _CountDownTimerState extends State<CountDownTimer>
 
   String get hours {
     Duration duration = _controller.duration * _controller.value;
-    return  getHours(duration.inSeconds);
+    return getHours(duration.inSeconds);
   }
 
   String get minutes {
@@ -114,41 +114,37 @@ class _CountDownTimerState extends State<CountDownTimer>
 
   Widget _buildTile(String value, String title) {
     return Expanded(
-      child: Row(
-        children: <Widget>[
-          Material(
-            color: Colors.transparent,
-            child: Padding(
-              padding:
-                  const EdgeInsets.only(left: 20, right: 8, top: 15, bottom: 0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Text(
-                    '$value',
-                      style: timeStyle,
-                  ),
-                  SizedBox(
-                    height: 8,
-                  ),
-                  Text(
-                    '$title',
-                     style: timeTitleStyle,
-                    maxLines: 1,
-                  ),
-                ],
+      child: Material(
+        color: Colors.transparent,
+        child: Padding(
+          padding:
+              const EdgeInsets.only(left: 20, right: 20, top: 15, bottom: 0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                '$value',
+                style: timeStyle,
               ),
-            ),
+              SizedBox(
+                height: 8,
+              ),
+              Text(
+                '$title',
+                style: timeTitleStyle,
+                maxLines: 1,
+              ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
 
   Widget _buildDivider() {
     return Padding(
-      padding: EdgeInsets.only(right: 8),
+      padding: EdgeInsets.only(right: 0),
       child: Container(
         width: 1,
         height: 42,

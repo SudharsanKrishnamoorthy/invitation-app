@@ -1,9 +1,14 @@
+import 'dart:ui';
+
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:invitation/styles/app_theme.dart';
+import 'package:invitation/utils/constants.dart';
+import 'package:invitation/views/components/header.dart';
 
 class AlbumPage extends StatefulWidget {
   @override
@@ -25,39 +30,68 @@ class _AlbumPageState extends State<AlbumPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppTheme.primaryColor,
-      appBar: AppBar(
-        backgroundColor: AppTheme.primaryColor,
-        title: Text('Gallery'),
-      ),
-      body: FutureBuilder<List>(
-          future: fetchAds(),
-          builder: (BuildContext context, AsyncSnapshot snapshot) {
-            if (snapshot.hasData) {
-              return Padding(
-                padding: const EdgeInsets.all(4.0),
-                //this is what you actually need
-                child: StaggeredGridView.count(
-                  crossAxisCount: 4, // I only need two card horizontally
-                  padding: const EdgeInsets.all(2.0),
-                  children: snapshot.data.map<Widget>((item) {
-                    //Do you need to go somewhere when you tap on this card, wrap using InkWell and add your route
-                    return AdCard(item);
-                  }).toList(),
+      body: _buildGallery(),
+    );
+  }
 
-                  //Here is the place that we are getting flexible/ dynamic card for various images
-                  staggeredTiles: snapshot.data
-                      .map<StaggeredTile>((_) => StaggeredTile.fit(2))
-                      .toList(),
-                  mainAxisSpacing: 3.0,
-                  crossAxisSpacing: 4.0, // add some space
-                ),
-              );
-            } else {
-              return Center(
-                child: CircularProgressIndicator(),
-              ); // If there are no data show this
-            }
-          }),
+  Widget _buildGallery() {
+    return Stack(
+      children: <Widget>[
+        Positioned.fill(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('$bg/bg2.jpg'),
+                fit: BoxFit.fill,
+              ),
+            ),
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+              child: Container(
+                color: Colors.grey.withOpacity(.1),
+              ),
+            ),
+          ),
+        ),
+        Positioned.fill(
+          child: _buildBody(),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildBody() {
+    return FutureBuilder<List>(
+      future: fetchAds(),
+      builder: (BuildContext context, AsyncSnapshot snapshot) {
+        if (snapshot.hasData) {
+          return Padding(
+            padding: const EdgeInsets.all(4.0),
+            //this is what you actually need
+            child: StaggeredGridView.count(
+              crossAxisCount: 4, // I only need two card horizontally
+              padding: const EdgeInsets.all(2.0),
+              children: snapshot.data.map<Widget>(
+                (item) {
+                  //Do you need to go somewhere when you tap on this card, wrap using InkWell and add your route
+                  return AdCard(item);
+                },
+              ).toList(),
+
+              //Here is the place that we are getting flexible/ dynamic card for various images
+              staggeredTiles: snapshot.data
+                  .map<StaggeredTile>((_) => StaggeredTile.fit(2))
+                  .toList(),
+              mainAxisSpacing: 3.0,
+              crossAxisSpacing: 4.0, // add some space
+            ),
+          );
+        } else {
+          return Center(
+            child: CircularProgressIndicator(),
+          ); // If there are no data show this
+        }
+      },
     );
   }
 }
@@ -101,8 +135,12 @@ class _AdCardState extends State<AdCard> {
           _imageUrl == null
               ? SizedBox()
               : Card(
-                elevation: 20,
-                  child: Image.network(_imageUrl),
+                  elevation: 20,
+                  child: CachedNetworkImage(
+                    imageUrl: _imageUrl,
+                    placeholder: (context, url) => CircularProgressIndicator(),
+                    errorWidget: (context, url, error) => Icon(Icons.error),
+                  ),
                 ),
         ],
       ),

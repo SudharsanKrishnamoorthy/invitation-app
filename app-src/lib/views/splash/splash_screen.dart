@@ -69,7 +69,7 @@ class _SplashScreenState extends State<SplashScreen>
               style: splashFooter,
             ),
             Text(
-              'HEX CREATORS',
+              'P3S2M1',
               style: splashFooter1,
             )
           ],

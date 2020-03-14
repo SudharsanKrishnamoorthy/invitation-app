@@ -6,13 +6,15 @@ import 'package:invitation/styles/text_styles.dart';
 import 'package:invitation/utils/ui_helper.dart';
 import 'package:invitation/views/components/header.dart';
 
+import 'dart:ui';
+
+
 class WishesPage extends StatefulWidget {
   @override
   _WishesPageState createState() => _WishesPageState();
 }
 
 class _WishesPageState extends State<WishesPage> with TickerProviderStateMixin {
-  
   AnimationController animationController;
   int selectedIndex = 0;
 
@@ -35,7 +37,31 @@ class _WishesPageState extends State<WishesPage> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppTheme.homeC1,
-      body: _buildBody(),
+      body: _bgPhoto(),
+    );
+  }
+
+  Widget _bgPhoto() {
+    return Stack(
+      children: <Widget>[
+        Positioned.fill(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(wishes[selectedIndex].image),
+                fit: BoxFit.cover
+              ),
+            ),
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 6, sigmaY: 6),
+              child: Container(
+                color: Colors.black.withOpacity(.1),
+              ),
+            ),
+          ),
+        ),
+        Positioned.fill(child: _buildBody())
+      ],
     );
   }
 
@@ -44,6 +70,7 @@ class _WishesPageState extends State<WishesPage> with TickerProviderStateMixin {
       children: <Widget>[
         HeaderView(
           title: 'Wishes',
+          isLight: true,
         ),
         Expanded(
           child: _buildContent(),
@@ -123,9 +150,9 @@ class _WishesPageState extends State<WishesPage> with TickerProviderStateMixin {
               Text(''),
               Text(
                 wishes[selectedIndex].name,
-                style: title.copyWith(fontSize: 30),
+                style: title.copyWith(fontSize: 30, color: AppTheme.white),
               ),
-              Text('Friend')
+              Text(wishes[selectedIndex].relation, style: TextStyle(color: AppTheme.nearlyWhite),)
             ],
           ),
           Container(
@@ -139,7 +166,7 @@ class _WishesPageState extends State<WishesPage> with TickerProviderStateMixin {
                 image: AssetImage(
                   wishes[selectedIndex].image,
                 ),
-                fit: BoxFit.fill,
+                fit: BoxFit.cover,
               ),
             ),
           ),
@@ -155,14 +182,16 @@ class _WishesPageState extends State<WishesPage> with TickerProviderStateMixin {
         width: UIHelper.screenWidth * .7,
         height: UIHelper.screenHeight * .57,
         child: Card(
+          color: AppTheme.nearlyBlack.withOpacity(.2),
           elevation: 20,
           child: Center(
             child: Container(
               padding: EdgeInsets.all(15),
               child: SingleChildScrollView(
-                              child: Text(
+                child: Text(
                   wishes[selectedIndex].text,
-                  style: body2,
+                  style: body2.copyWith(color:AppTheme.nearlyWhite),
+                  textAlign: TextAlign.center,
                 ),
               ),
             ),
