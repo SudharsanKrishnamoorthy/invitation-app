@@ -48,7 +48,7 @@
 		"isSelected": false
     },
 	{
-        "id": 6,
+        "id": 7,
         "name": "Mano",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/mano.jpg",
@@ -56,7 +56,7 @@
 		"isSelected": false
     },
 	{
-        "id": 7,
+        "id": 8,
         "name": "Aravind",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/aravind.jpg",
@@ -64,7 +64,7 @@
 		"isSelected": false
     },
 	{
-        "id": 8,
+        "id": 9,
         "name": "Feroz",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/feroz.jpg",
@@ -72,7 +72,7 @@
 		"isSelected": false
     },
 	{
-        "id": 9,
+        "id": 10,
         "name": "Praseeda",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/praseeda.jpeg",
@@ -80,7 +80,7 @@
 		"isSelected": false
     },
 	{
-        "id": 10,
+        "id": 11,
         "name": "Swetha",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/swetha.jpg",
@@ -88,7 +88,7 @@
 		"isSelected": false
     },
 	{
-        "id": 11,
+        "id": 12,
         "name": "Poovika",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/poovika.jpeg",
@@ -96,7 +96,7 @@
 		"isSelected": false
     },
 	{
-        "id": 12,
+        "id": 13,
         "name": "Manoj",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/manoj.jpg",
@@ -104,7 +104,7 @@
 		"isSelected": false
     },
 	{
-        "id": 13,
+        "id": 14,
         "name": "Packiaseelan",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/packiaseelan.jpg",
@@ -112,7 +112,7 @@
 		"isSelected": false
     },
 	{
-        "id": 14,
+        "id": 15,
         "name": "Vijay",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/vijay.jpeg",
@@ -120,7 +120,7 @@
 		"isSelected": false
     },
 	{
-        "id": 15,
+        "id": 16,
         "name": "Balaji",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/balaji.jpeg",
@@ -128,7 +128,7 @@
 		"isSelected": false
     },
 	{
-        "id": 16,
+        "id": 17,
         "name": "Srinivasan",
 		"relation": "Friend",
         "image": "https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/users/srinivasan.jpeg",
