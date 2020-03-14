@@ -7,6 +7,8 @@ import 'package:invitation/utils/ui_helper.dart';
 import 'package:invitation/views/components/header.dart';
 
 import 'dart:ui';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
 
 
 class WishesPage extends StatefulWidget {
@@ -17,6 +19,7 @@ class WishesPage extends StatefulWidget {
 class _WishesPageState extends State<WishesPage> with TickerProviderStateMixin {
   AnimationController animationController;
   int selectedIndex = 0;
+  List<WishesModel> wishes =[];
 
   @override
   void initState() {
@@ -37,18 +40,21 @@ class _WishesPageState extends State<WishesPage> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppTheme.homeC1,
-      body: _bgPhoto(),
+      body: _buildBody1(),
     );
   }
 
   Widget _bgPhoto() {
+    if(wishes.length == 0) {
+      return SizedBox();
+    }
     return Stack(
       children: <Widget>[
         Positioned.fill(
           child: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage(wishes[selectedIndex].image),
+                image: NetworkImage(wishes[selectedIndex].image),
                 fit: BoxFit.cover
               ),
             ),
@@ -88,6 +94,38 @@ class _WishesPageState extends State<WishesPage> with TickerProviderStateMixin {
     );
   }
 
+  Future<List> fetchData() async {
+    //the link you want to data from, goes inside get
+    final response = await http.get(
+      'https://raw.githubusercontent.com/SudharsanKrishnamoorthy/invitation-app/master/gallery/wishes/wishes.json',
+    );
+
+    if (response.statusCode == 200) {
+      wishes =(json.decode(response.body) as List).map((i) =>
+              WishesModel.fromJson(i)).toList();
+      return json.decode(response.body);
+      }
+    return [];
+  }
+
+  Widget _buildBody1() {
+    return FutureBuilder<List>(
+      future: fetchData(),
+      builder: (BuildContext context, AsyncSnapshot snapshot) {
+        if (snapshot.hasData) {
+          return Padding(
+            padding: const EdgeInsets.all(0),
+            child: _bgPhoto()
+          );
+        } else {
+          return Center(
+            child: CircularProgressIndicator(),
+          ); 
+        }
+      },
+    );
+  }
+
   Widget _buildUsersList(List<WishesModel> wishes) {
     return Container(
       color: AppTheme.primaryColor.withOpacity(.1),
@@ -112,7 +150,7 @@ class _WishesPageState extends State<WishesPage> with TickerProviderStateMixin {
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.white,
                 image: DecorationImage(
-                  image: AssetImage(
+                  image: NetworkImage(
                     wishes[index].image,
                   ),
                   fit: BoxFit.cover,
@@ -163,7 +201,7 @@ class _WishesPageState extends State<WishesPage> with TickerProviderStateMixin {
               borderRadius: BorderRadius.circular(5),
               color: Colors.white,
               image: DecorationImage(
-                image: AssetImage(
+                image: NetworkImage(
                   wishes[selectedIndex].image,
                 ),
                 fit: BoxFit.cover,

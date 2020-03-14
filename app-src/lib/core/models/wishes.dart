@@ -12,4 +12,12 @@ class WishesModel {
     this.text,
     this.isSelected,
   });
+
+  WishesModel.fromJson(Map<String, dynamic> map) {
+    this.name = map['name'];
+    this.image = map['image'];
+    this.relation = map['relation'];
+    this.text = map['text'];
+    this.isSelected = map['isSelected'];
+  }
 }

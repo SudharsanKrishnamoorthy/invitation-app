@@ -33,7 +33,6 @@ flutter:
     - assets/images/couple/profile/
     - assets/images/icons/
     - assets/images/splash/
-    - assets/images/users/
 
   fonts:
   - family: GreatVibes     
